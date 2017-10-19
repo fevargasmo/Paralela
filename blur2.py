@@ -3,9 +3,9 @@ import numpy as np
 
 img = cv2.imread('imagen.jpg')
 
-for i in xrange(340):
+for i in range(340):
     if (i >0 and i < 339):
-        for j in xrange(514):
+        for j in range(514):
             if j>0 and j < 513:
                 img[i][j][0] =  (int(img[i][j][0]) + int(img[i-1][j][0]) + int(img[i][j+1][0]) + int(img[i+1][j][0]) + int(img[i][j-1][0]))/5
                 img[i][j][1] =  (int(img[i][j][1]) + int(img[i-1][j][1]) + int(img[i][j+1][1]) + int(img[i+1][j][1]) + int(img[i][j-1][1]))/5
