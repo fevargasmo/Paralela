@@ -1,4 +1,4 @@
-mport cv2
+import cv2
 import numpy as np
 
 img = cv2.imread('imagen.jpg')
